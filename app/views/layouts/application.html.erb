@@ -8,15 +8,14 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application" %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <h1>
-      <div class="p-6 rounded-lg w-full"><span class="p-6 rounded-lg bg-slate-100 text-2xl">AITAH Reader <span id="version"></span></span></div>
-    </h1>
+    <h1><div class="p-6 rounded-lg w-full mt-9"><span class="p-6 rounded-lg bg-slate-100 text-2xl">AITAH Reader <span id="version"></span></span></div></h1>
 
-    <main class="container mx-auto mt-28 px-5 flex app">
-      <div class="p-6"
+    <main class="mt-7 flex app">
+      <div class="p-6">
         <%= yield %>
       </div>
     </main>
