@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AitahPlayerRails</title>
+    <title>AITAH Player</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,8 +11,14 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+    <h1>
+      <div class="p-6 rounded-lg w-full"><span class="p-6 rounded-lg bg-slate-100 text-2xl">AITAH Reader <span id="version"></span></span></div>
+    </h1>
+
+    <main class="container mx-auto mt-28 px-5 flex app">
+      <div class="p-6"
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
